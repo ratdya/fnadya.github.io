@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cursor = document.querySelector('.custom-cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+    });
+</script>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background: url(https://www.tiongbahrubakery.com/wp-content/themes/tiongbahrubakery/assets/img/pattern.jpg) repeat left top;
+        cursor: none; /*Hide the default cursor*/
+    }
+    #header {
+        width: 1270px;
+        height: 100px;
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        width: 15%;
+    }
+    .center2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 30%;
+    }
+    .center3{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 45%;
+    }
+    .tray{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        width: 14%; 
+    }
+    .croissant1{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 0%;
+        margin-left: 20px;
+    }
+    .croissant2{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 0%;
+        margin-left: 68%;
+    }
+    .nutcroissant{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 25%;
+        margin-left: 10%;
+    }
+    .monkey1{
+        position: absolute;
+        width: 130px;
+        height: auto;
+        margin-top: 10%;
+        margin-left: 200px;
+    }
+    .focaccia{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 0%;
+        margin-left: 90%;
+    }
+    .amann{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 10%;
+        margin-left: 75%;
+    }
+    .eclair{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 7%;
+        margin-left: 90%; 
+    }
+    .pbccookie{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 15%;
+        margin-left: 12%;
+    }
+    .croque{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 17%;
+        margin-left:85%;
+    }
+    .roastsandwich{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 17%;
+        margin-left:70%;
+    }
+    .rye{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top:24%;
+        margin-left:23%;
+    }
+    .applecrumble{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 23%;
+        margin-left:90%;
+    }
+    .lemontart{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 35%;
+        margin-left:79%;
+    }
+    .brie{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        margin-top: 33%;
+        margin-left: 4%;
+    }
+
+    .shadows-into-light-two-regular {
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+#text{
+    margin-top: 10px;
+    font-family: "Shadows Into Light Two", cursive;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-style: normal; 
+  text-align: center;
+  color: darkcyan;
+}
+#textbottom{
+    margin-top: 20px;
+    font-family: "Shadows Into Light Two", cursive;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal; 
+  text-align: center;
+  color: darkcyan;
+}
+#lastline{
+    margin-top: 5px;
+    font-family: "Shadows Into Light Two", cursive;
+  font-weight: 700;
+  font-size: 1em;
+  font-style: normal; 
+  text-align: center;
+  color: #008b8b;
+}
+#footer{
+    width:99%;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.custom-cursor {
+            position: fixed;
+            width: 50px; /* Adjust to match the size of your GIF */
+            height: 50px; /* Adjust to match the size of your GIF */
+            background-image: url('whisk.gif'); /* Replace with the path to your GIF file */
+            background-size: cover;
+            pointer-events: none; /* Ensure the cursor does not block any click events */
+            transform: translate(-50%, -50%); /* Center the custom cursor */
+            z-index: 9999;
+        }
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.link-button {
+    position: absolute;
+    margin-top: 20px;
+            margin-left: 555px;
+            display: block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #008b8b;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .link-button:hover {
+            background-color: #008b8b;
+
+        }
+</style>
+
+
+<body>
+    <header>
+    <div id="header">
+        <img src="header.png" img id="header">
+    </div>
+    </header>
+<div>
+    <div id="title">
+        <img id="title pic" 
+        img src="tiong bahru bakery words.png"
+        class="center">
+        <img id="croissant" img src="croissant.png" 
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        class="croissant1">
+        
+
+        <img id="monkey cube" img src="cinnamon monkey cube.png" 
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        class="monkey1">
+
+        <img id="nut croissant" img src="nut butter croissant.png" 
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        class="nutcroissant">
+
+        <img id="choc amann" img src="chocolate kouign amann.png" 
+        data-aos="fade-left"
+        data-aos-duration="1000" class="amann">
+
+        <img id="croque" img src="croque monsieur.png" 
+        data-aos="fade-left"
+        data-aos-duration="1000"class="croque">
+
+        <img id="focaccia" img src="rosemary focaccia.png" 
+        data-aos="fade-left"
+        data-aos-duration="1000" class="focaccia">
+    
+
+    </div>
+<div>
+    <div id="404">
+        <img id="404" 
+        img src="4oh4.png" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+         class="center3">
+         <img id="croissant" img src="mittens.png" class="croissant2">
+
+        
+         <img id="eclair" img src="eclair.png" 
+         data-aos="fade-left"
+        data-aos-duration="1000" class="eclair"> 
+
+         <img id="pbc cookie" img src="peanut butter and chocolate cookie.png" 
+         data-aos="fade-right"
+        data-aos-duration="1000"
+         class="pbccookie">
+
+         <img id="brie" img src="brie mushroom croissant.png" 
+         data-aos="fade-right"
+        data-aos-duration="1000"
+         class="brie">
+
+         <img id="roast beef" img src="roast beef croissant sandwich.png" 
+         data-aos="fade-left"
+        data-aos-duration="1000"
+         class="roastsandwich">
+
+         <img id="apple crumble" img src="apple crumble.png" 
+         data-aos="fade-left"
+        data-aos-duration="1000"
+         class="applecrumble">
+
+         <img id="rye" img src="rye sourdough.png" 
+         data-aos="fade-right"
+        data-aos-duration="1000"
+         class="rye">
+
+         <img id="lemon tart" img src="lemon tart.png" 
+         data-aos="fade-left"
+        data-aos-duration="1000"
+         class="lemontart">
+
+    </div>
+</div>
+<div id="text">
+Sorry! This page can't be found. </br> We would never serve you something underbaked.
+</div>
+
+<a href="https://www.tiongbahrubakery.com/" class="link-button">Back to Bakery</a>
+
+<img id="tray" img src="cookie tray.png" class="tray">
+
+
+    <div id="dining table">
+        <img id="dining table" img src="dining table real.png" 
+        data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"
+        class="center2">
+    </div>
+
+    <div id="textbottom">
+        OUR STORY: </br> There’s always that special place in the areas we live.</br> By habit or necessity, there are checkpoints where our paths converge, no matter where our days take us.</br>
+        These are the places where shared moments and experiences connect us – and they eventually come to mean far more than the function it serves.</br>A café doesn’t merely dispense coffee.</br> Neither does a bakery simply cook flour and put them on sale.</br>They are strongholds founded deep in the history of the area it dwells, built upon with stories shared within and around its walls.</br>Where perspectives are challenged, broadened, renewed; and the future can be boldly envisioned with insight and belief.</br>Where friends are made, dreams are shared, and love is found.</br>This unique confluence of the community drives us to excellence and new levels of inspiration in everything we do.
+    </br>We are dedicated to celebrating the individuals, embracing the stories and transforming the living space for people around us.
+    </div>
+
+<div id="lastline">
+   We are dedicated to celebrating neighbourhoods.
+</div>
+
+<div id="footer">
+    <img id="footer" img src="footer.png">
+</div>
+
+    <div class="custom-cursor"></div>
+    <script src="script.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+</div>
+</body>
